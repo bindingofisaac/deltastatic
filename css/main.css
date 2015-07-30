@@ -1,0 +1,44 @@
+body{
+    background: black;
+    color:white;
+}
+.content{
+    width:960px;
+    margin:auto;
+}
+.center-align{
+    text-align: center;
+}
+
+#projects ul{
+    font-family: sans-serif;
+    margin:0;
+    padding:20px 0 0;
+}
+
+#projects ul>li{
+    display: block;
+    background:white;
+    padding:10px;
+    margin:1px;
+}
+
+#projects ul>li>a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#projects ul>li>a:hover, #projects ul>li:hover{
+    color: black;
+    background: gold;
+}
+
+#projects ul>li>a span{
+    float :right;
+}
+
+.clear{
+    clear: both;
+}
+
