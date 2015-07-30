@@ -1,3 +1,6 @@
+NProgress.configure({ showSpinner: false });
+NProgress.start();
+
 var shouldLog = true;
 var log = console.log;
 
@@ -19,6 +22,8 @@ function members(res){
     $("#members").justifiedGallery({
         "lastRow"   : "justify",
         "randomize" : true
+    }).on('jg.complete', function (e) {
+        NProgress.done();
     });
     console.log(data, "members");
 }
