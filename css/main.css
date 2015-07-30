@@ -42,3 +42,16 @@ body{
     clear: both;
 }
 
+.hDec:before, .hDec:after {
+    position: absolute;
+    overflow:none ;
+    margin-top: 20px;
+    width: 25%;
+    height: 1px;
+    content: '\a0';
+    background-color: white;
+}
+.hDec:before {
+    margin-left: -25%;
+    text-align: right;
+}
